@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Console\App\Commands\isPalindrome;
+use Console\App\Commands\isAnagram;
+use Console\App\Commands\isPangram;
+
+$app = new Application();
+$app->add(new isPalindrome());
+$app->add(new isAnagram());
+$app->add(new isPangram());
+$app->run();

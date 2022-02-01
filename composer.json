@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/console": "^5.4",
+        "phpunit/phpunit": "^9.5",
+        "symfony/maker-bundle": "^1.36"
+    },
+    "autoload": {
+        "psr-4": {
+            "Console\\": "src"
+        },
+        "classmap": ["src"]
+    }
+}
